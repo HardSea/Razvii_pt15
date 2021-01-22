@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Razvii_pt15</string>
+    <string name="me">me</string>
+    <string name="mom">mom</string>
+    <string name="dad">dad</string>
+    <string name="m_s_m">M\'s m</string>
+    <string name="m_s_f">M\'s f</string>
+    <string name="d_s_m">D\'s m</string>
+    <string name="d_s_f">D\'s f</string>
+    <string name="m_s_m_m">M\'s m m</string>
+    <string name="m_s_m_f">M\'s m f</string>
+    <string name="m_s_f_m">M\'s f m</string>
+    <string name="m_s_f_f">M\'s f f</string>
+    <string name="d_s_m_m">D\'s m m</string>
+    <string name="d_s_m_f">D\'s m f</string>
+    <string name="d_s_f_m">D\'s f m</string>
+    <string name="d_s_f_f">D\'s f f</string>
+    <string name="m_m_m_m">M m m m</string>
+    <string name="m_m_m_f">M m m f</string>
+    <string name="m_m_f_m">M m f m</string>
+    <string name="m_m_f_f">M m f f</string>
+    <string name="m_f_m_m">M f m m</string>
+    <string name="m_f_m_f">M f m f</string>
+    <string name="m_f_f_m">M f f m</string>
+    <string name="m_f_f_f">M f f f</string>
+    <string name="d_m_m_m">D m m m</string>
+    <string name="d_m_m_f">D m m f</string>
+    <string name="d_m_f_m">D m f m</string>
+    <string name="d_m_f_f">D m f f</string>
+    <string name="d_f_m_m">D f m m</string>
+    <string name="d_f_m_f">D f m f</string>
+    <string name="d_f_f_m">D f f m</string>
+    <string name="d_f_f_f">D f f f</string>
+</resources>
