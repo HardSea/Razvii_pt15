@@ -7,6 +7,381 @@
     tools:context=".MainActivity"
     tools:ignore="SmallSp">
 
- 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1666" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3333" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4999" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6665" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8331" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/me"
+        app:layout_constraintBottom_toTopOf="@id/guideline1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline1" />
+
+
+    <TextView
+
+        android:id="@+id/mom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mom"
+        app:layout_constraintBottom_toTopOf="@id/guideline2"
+        app:layout_constraintEnd_toStartOf="@id/dad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline2" />
+
+
+    <TextView
+        android:id="@+id/dad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dad"
+        app:layout_constraintBottom_toTopOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/mom"
+        app:layout_constraintTop_toBottomOf="@id/guideline2" />
+
+
+    <TextView
+        android:id="@+id/grandma_moms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m_s_m"
+        app:layout_constraintBottom_toTopOf="@id/guideline3"
+        app:layout_constraintEnd_toStartOf="@id/grandfa_moms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline3" />
+
+
+    <TextView
+        android:id="@+id/grandfa_moms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m_s_f"
+        app:layout_constraintBottom_toTopOf="@id/guideline3"
+        app:layout_constraintEnd_toStartOf="@id/grandma_dads"
+        app:layout_constraintStart_toEndOf="@id/grandma_moms"
+        app:layout_constraintTop_toBottomOf="@id/guideline3" />
+
+
+    <TextView
+        android:id="@+id/grandma_dads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d_s_m"
+        app:layout_constraintBottom_toTopOf="@id/guideline3"
+        app:layout_constraintEnd_toStartOf="@id/grandfa_dads"
+        app:layout_constraintStart_toEndOf="@id/grandfa_moms"
+        app:layout_constraintTop_toBottomOf="@id/guideline3" />
+
+
+    <TextView
+        android:id="@+id/grandfa_dads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d_s_f"
+        app:layout_constraintBottom_toTopOf="@id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/grandma_dads"
+        app:layout_constraintTop_toBottomOf="@id/guideline3" />
+
+
+    <TextView
+        android:id="@+id/grandma_grandma_moms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m_s_m_m"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        app:layout_constraintEnd_toStartOf="@id/grandfa_grandma_moms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline4" />
+
+    <TextView
+        android:id="@+id/grandfa_grandma_moms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m_s_m_f"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        app:layout_constraintEnd_toStartOf="@id/grandma_grandfa_moms"
+        app:layout_constraintStart_toEndOf="@id/grandma_grandma_moms"
+        app:layout_constraintTop_toBottomOf="@id/guideline4" />
+
+
+    <TextView
+        android:id="@+id/grandma_grandfa_moms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m_s_f_m"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        app:layout_constraintEnd_toStartOf="@id/grandfa_grandfa_moms"
+        app:layout_constraintStart_toEndOf="@id/grandfa_grandma_moms"
+        app:layout_constraintTop_toBottomOf="@id/guideline4" />
+
+    <TextView
+        android:id="@+id/grandfa_grandfa_moms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m_s_f_f"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        app:layout_constraintEnd_toStartOf="@id/grandma_grandma_dads"
+        app:layout_constraintStart_toEndOf="@id/grandma_grandfa_moms"
+        app:layout_constraintTop_toBottomOf="@id/guideline4" />
+
+
+    <TextView
+        android:id="@+id/grandma_grandma_dads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d_s_m_m"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        app:layout_constraintEnd_toStartOf="@id/grandfa_grandma_dads"
+        app:layout_constraintStart_toEndOf="@id/grandfa_grandfa_moms"
+        app:layout_constraintTop_toBottomOf="@id/guideline4" />
+
+    <TextView
+        android:id="@+id/grandfa_grandma_dads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d_s_m_f"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        app:layout_constraintEnd_toStartOf="@id/grandma_grandfa_dads"
+        app:layout_constraintStart_toEndOf="@id/grandma_grandma_dads"
+        app:layout_constraintTop_toBottomOf="@id/guideline4" />
+
+
+    <TextView
+        android:id="@+id/grandma_grandfa_dads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d_s_f_m"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        app:layout_constraintEnd_toStartOf="@id/grandfa_grandfa_dads"
+        app:layout_constraintStart_toEndOf="@id/grandfa_grandma_dads"
+        app:layout_constraintTop_toBottomOf="@id/guideline4" />
+
+    <TextView
+        android:id="@+id/grandfa_grandfa_dads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d_s_f_f"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/grandma_grandfa_dads"
+        app:layout_constraintTop_toBottomOf="@id/guideline4" />
+
+
+    <TextView
+        android:id="@+id/grandma_grandma_grandma_moms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m_m_m_m"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintEnd_toStartOf="@id/grandfa_grandma_grandma_moms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline5" />
+
+    <TextView
+        android:id="@+id/grandfa_grandma_grandma_moms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m_m_m_f"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintEnd_toStartOf="@id/grandma_grandfa_grandma_moms"
+        app:layout_constraintStart_toEndOf="@id/grandma_grandma_grandma_moms"
+        app:layout_constraintTop_toBottomOf="@id/guideline5" />
+
+    <TextView
+        android:id="@+id/grandma_grandfa_grandma_moms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m_m_f_m"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintEnd_toStartOf="@id/grandfa_grandfa_grandma_moms"
+        app:layout_constraintStart_toEndOf="@id/grandfa_grandma_grandma_moms"
+        app:layout_constraintTop_toBottomOf="@id/guideline5" />
+
+    <TextView
+        android:id="@+id/grandfa_grandfa_grandma_moms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m_m_f_f"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintEnd_toStartOf="@id/grandma_grandma_grandfa_moms"
+        app:layout_constraintStart_toEndOf="@id/grandma_grandfa_grandma_moms"
+        app:layout_constraintTop_toBottomOf="@id/guideline5" />
+
+
+    <TextView
+        android:id="@+id/grandma_grandma_grandfa_moms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m_f_m_m"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintEnd_toStartOf="@id/grandfa_grandma_grandfa_moms"
+        app:layout_constraintStart_toEndOf="@id/grandfa_grandfa_grandma_moms"
+        app:layout_constraintTop_toBottomOf="@id/guideline5" />
+
+    <TextView
+        android:id="@+id/grandfa_grandma_grandfa_moms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m_f_m_f"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintEnd_toStartOf="@id/grandma_grandfa_grandfa_moms"
+        app:layout_constraintStart_toEndOf="@id/grandma_grandma_grandfa_moms"
+        app:layout_constraintTop_toBottomOf="@id/guideline5" />
+
+    <TextView
+        android:id="@+id/grandma_grandfa_grandfa_moms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m_f_f_m"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintEnd_toStartOf="@id/grandfa_grandfa_grandfa_moms"
+        app:layout_constraintStart_toEndOf="@id/grandfa_grandma_grandfa_moms"
+        app:layout_constraintTop_toBottomOf="@id/guideline5" />
+
+    <TextView
+        android:id="@+id/grandfa_grandfa_grandfa_moms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m_f_f_f"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintEnd_toStartOf="@id/grandma_grandma_grandma_dads"
+        app:layout_constraintStart_toEndOf="@id/grandma_grandfa_grandfa_moms"
+        app:layout_constraintTop_toBottomOf="@id/guideline5" />
+
+
+    <TextView
+        android:id="@+id/grandma_grandma_grandma_dads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d_m_m_m"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintEnd_toStartOf="@id/grandfa_grandma_grandma_dads"
+        app:layout_constraintStart_toEndOf="@id/grandfa_grandfa_grandfa_moms"
+        app:layout_constraintTop_toBottomOf="@id/guideline5" />
+
+    <TextView
+        android:id="@+id/grandfa_grandma_grandma_dads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d_m_m_f"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintEnd_toStartOf="@id/grandma_grandma_grandma_dads"
+        app:layout_constraintStart_toEndOf="@id/grandma_grandfa_grandma_dads"
+        app:layout_constraintTop_toBottomOf="@id/guideline5" />
+
+    <TextView
+        android:id="@+id/grandma_grandfa_grandma_dads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d_m_f_m"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintEnd_toStartOf="@id/grandfa_grandfa_grandma_dads"
+        app:layout_constraintStart_toEndOf="@id/grandfa_grandma_grandma_dads"
+        app:layout_constraintTop_toBottomOf="@id/guideline5" />
+
+    <TextView
+        android:id="@+id/grandfa_grandfa_grandma_dads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d_m_f_f"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintEnd_toStartOf="@id/grandma_grandma_grandfa_dads"
+        app:layout_constraintStart_toEndOf="@id/grandma_grandfa_grandma_dads"
+        app:layout_constraintTop_toBottomOf="@id/guideline5" />
+
+
+    <TextView
+        android:id="@+id/grandma_grandma_grandfa_dads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d_f_m_m"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintEnd_toStartOf="@id/grandfa_grandma_grandfa_dads"
+        app:layout_constraintStart_toEndOf="@id/grandfa_grandfa_grandma_dads"
+        app:layout_constraintTop_toBottomOf="@id/guideline5" />
+
+    <TextView
+        android:id="@+id/grandfa_grandma_grandfa_dads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d_f_m_f"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintEnd_toStartOf="@id/grandma_grandfa_grandfa_dads"
+        app:layout_constraintStart_toEndOf="@id/grandma_grandma_grandfa_dads"
+        app:layout_constraintTop_toBottomOf="@id/guideline5" />
+
+    <TextView
+        android:id="@+id/grandma_grandfa_grandfa_dads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d_f_f_m"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintEnd_toStartOf="@id/grandfa_grandfa_grandfa_dads"
+        app:layout_constraintStart_toEndOf="@id/grandfa_grandma_grandfa_dads"
+        app:layout_constraintTop_toBottomOf="@id/guideline5" />
+
+    <TextView
+        android:id="@+id/grandfa_grandfa_grandfa_dads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d_f_f_f"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/grandma_grandfa_grandfa_dads"
+        app:layout_constraintTop_toBottomOf="@id/guideline5" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
